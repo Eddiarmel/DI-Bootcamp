@@ -20,12 +20,9 @@ Défi 2
 à l'utilisateur et affiche une nouvelle chaîne sans les lettres consécutives identiques.
 """
 
-word = input("Entrez une chaîne : ")
-
-result = ""
-
-for i in range(len(word)):
-    if i == 0 or word[i] != word[i - 1]:
-        result += word[i]
-
-print(result)
+mots= input("Entrez un mot : ")
+resultat = ""
+for lettre in mots:
+    if resultat == "" or lettre != resultat[-1]:
+        resultat += lettre
+print(resultat)
