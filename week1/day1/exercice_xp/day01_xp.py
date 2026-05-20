@@ -69,7 +69,8 @@ print(infos)
 Instructions
 Créez deux variables, aet b.
 La valeur de chaque variable doit être un nombre.
-Si ala valeur est supérieure à b, votre code doit afficher "Hello World".
+Si al 
+a valeur est supérieure à b, votre code doit afficher "Hello World".
 """
 a=3
 b=2
