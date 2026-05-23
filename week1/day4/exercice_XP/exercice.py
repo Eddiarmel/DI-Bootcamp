@@ -156,3 +156,13 @@ class Family:
         print(f"Family last name: {self.last_name}")
         for member in self.members:
             print(f"{member.first_name}, {member.age} years old")
+
+
+family = Family("Smith")
+family.born("Tom", 16)
+family.born("Emma", 20)
+
+family.check_majority("Tom")  # → "Sorry, you are not allowed..."
+family.check_majority("Emma") # → "You are over 18, your parents..."
+
+family.family_presentation()
