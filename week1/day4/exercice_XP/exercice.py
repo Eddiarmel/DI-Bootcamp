@@ -83,17 +83,16 @@ print(dog1.fight(dog2))
 ## 🌟 Exercise 3: Dogs Domesticated
 # pet_dog.py
 import random
-from exercice_3.dog import Dog  # Step 1 : import de la classe Dog
+from exercice_3.dog import Dog  
 
 # Step 2 : PetDog hérite de Dog
 class PetDog(Dog):
     def __init__(self, name, age, weight):
-        super().__init__(name, age, weight)   # on réutilise __init__ de Dog
-        self.trained = False                  # attribut spécifique à PetDog
+        super().__init__(name, age, weight)   
+        self.trained = False                  
 
     def train(self):
-        print(self.bark())                    # affiche le bark hérité de Dog
-        self.trained = True                   # le chien est maintenant entraîné
+        self.trained = True                   
 
     def play(self, *args):
         # *args = liste d'instances PetDog qui jouent ensemble
