@@ -2,20 +2,20 @@ import random
 
 class Game:
     def get_user_item(self):
-        # Demander à l'utilisateur jusqu'à ce qu'il donne une entrée valide
+        # Ask the user until they give a valid input
         while True:
-            user_item = input("Choisissez (rock/paper/scissors): ").lower()
+            user_item = input("Choose (rock/paper/scissors): ").lower()
             if user_item in ["rock", "paper", "scissors"]:
                 return user_item
             else:
-                print("Entrée invalide. Essayez encore.")
+                print("Invalid input. Try again.")
 
     def get_computer_item(self):
-        # Choix aléatoire pour l'ordinateur
+        # Random choice for the computer
         return random.choice(["rock", "paper", "scissors"])
 
     def get_game_result(self, user_item, computer_item):
-        # Déterminer le résultat
+        # Determine the result
         if user_item == computer_item:
             return "draw"
         elif (user_item == "rock" and computer_item == "scissors") or \
@@ -30,22 +30,12 @@ class Game:
         computer_item = self.get_computer_item()
         result = self.get_game_result(user_item, computer_item)
 
-        print(f"Vous avez choisi {user_item}. L'ordinateur a choisi {computer_item}.")
+        print(f"You selected {user_item}. The computer selected {computer_item}.")
         if result == "win":
-            print("🎉 Vous avez gagné !")
+            print("You won!")
         elif result == "loss":
-            print("😢 Vous avez perdu.")
+            print("You lost.")
         else:
-            print("🤝 Match nul.")
+            print("It's a draw.")
 
         return result
-
-                    
-
-         
-             
-    
-             
-             
-             
-
