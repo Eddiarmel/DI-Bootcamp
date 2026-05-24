@@ -45,17 +45,17 @@ class Circle:
 c1 = Circle(radius=3)
 c2 = Circle(diameter=10)
 
-print(c1)  # Circle with radius 3 and diameter 6
-print(c2)  # Circle with radius 5.0 and diameter 10.0
+print(c1)  
+print(c2)  
 
-print("Area of c1:", c1.area())  # 28.27...
-print("Area of c2:", c2.area())  # 78.53...
+print("Area of c1:", c1.area())  
+print("Area of c2:", c2.area())  
 
 c3 = c1 + c2
-print(c3)  # Circle with radius 8.0 and diameter 16.0
+print(c3)  
 
-print(c1 > c2)  # False
-print(c1 == Circle(radius=3))  # True
+print(c1 > c2)  
+print(c1 == Circle(radius=3))  
 
 circles = [c1, c2, c3]
-print(sorted(circles))  # sorted by radius
+print(sorted(circles))  
